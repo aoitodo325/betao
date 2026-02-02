@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Betao é a casa de apostas licenciada pelo Ministério da Fazenda. Apostas esportivas, cassino, slots. Pix instantâneo. Saque rápido. ⚽🎰">
+    <title>Betao – Casa de Apostas e Cassino Online Licenciada | Brasil 2026</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a5cff;
+            --primary-dark: #0041d4;
+            --secondary: #ffa31a;
+            --success: #10b981;
+            --danger: #ef4444;
+            --dark: #0f1419;
+            --dark-2: #1c2128;
+            --dark-3: #2d333b;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --border: #373e47;
+            --gradient-1: linear-gradient(135deg, #1a5cff 0%, #7c3aed 100%);
+            --gradient-2: linear-gradient(135deg, #ffa31a 0%, #ff6b35 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--dark);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(15, 20, 25, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav a {
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav a:hover {
+            color: var(--primary);
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-1);
+            transition: width 0.3s;
+        }
+
+        .nav a:hover::after {
+            width: 100%;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(26, 92, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--gradient-2);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 163, 26, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(26, 92, 255, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+            padding: 4rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><circle cx="100" cy="100" r="3" fill="%231a5cff" opacity="0.3"/><circle cx="300" cy="200" r="2" fill="%237c3aed" opacity="0.3"/><circle cx="500" cy="150" r="3" fill="%231a5cff" opacity="0.3"/><circle cx="700" cy="250" r="2" fill="%237c3aed" opacity="0.3"/><circle cx="900" cy="100" r="3" fill="%231a5cff" opacity="0.3"/><circle cx="1100" cy="200" r="2" fill="%237c3aed" opacity="0.3"/></svg>');
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #fff 0%, #a8b3cf 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .trust-badges {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .badge-icon {
+            color: var(--success);
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hero-card-grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .hero-card-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .hero-card-item:hover {
+            transform: translateX(5px);
+        }
+
+        .hero-card-icon {
+            font-size: 2rem;
+        }
+
+        .hero-card-text strong {
+            display: block;
+            font-size: 1.125rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .hero-card-text span {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: var(--primary);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .card li {
+            padding: 0.5rem 0;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* Table */
+        .table-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: rgba(26, 92, 255, 0.1);
+            color: var(--text);
+            font-weight: 600;
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        td strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        /* Games Grid */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .game-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(26, 92, 255, 0.2);
+        }
+
+        .game-thumbnail {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(135deg, #1a5cff 0%, #7c3aed 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+
+        .game-info {
+            padding: 1rem;
+        }
+
+        .game-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .game-provider {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .game-rtp {
+            display: inline-block;
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--success);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        /* FAQ */
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transition: background 0.3s;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+        }
+
+        /* Warning Box */
+        .warning-box {
+            background: rgba(255, 163, 26, 0.1);
+            border: 2px solid var(--secondary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .warning-box-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .warning-box p {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: rgba(26, 92, 255, 0.1);
+            border: 1px solid var(--primary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .info-box p {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .page-archive {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .page-archive details {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .page-archive details[open] {
+            border-color: var(--primary);
+            box-shadow: 0 15px 35px rgba(26, 92, 255, 0.25);
+        }
+
+        .page-archive summary {
+            font-size: 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .page-archive summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .page-archive summary::after {
+            content: '▼';
+            font-size: 0.85rem;
+            transition: transform 0.3s;
+        }
+
+        .page-archive details[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        .raw-article {
+            margin-top: 1rem;
+            max-height: 60vh;
+            overflow: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .raw-article pre {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 0.85rem;
+            padding: 1rem;
+            margin: 0;
+            white-space: pre-wrap;
+            word-break: break-word;
+            background: rgba(15, 20, 25, 0.95);
+            color: var(--text);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-2);
+            border-top: 1px solid var(--border);
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .footer-legal {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .age-restriction {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--danger);
+            border-radius: 8px;
+        }
+
+        .age-icon {
+            font-size: 2rem;
+            color: var(--danger);
+        }
+
+        /* Responsive */
+        @media (max-width: 968px) {
+            .header-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .games-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-legal {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Content Styling */
+        .content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem;
+            color: var(--text);
+        }
+
+        .content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--text);
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+
+        .content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .content ul, .content ol {
+            margin: 1.5rem 0 1.5rem 2rem;
+            color: var(--text-muted);
+        }
+
+        .content li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .highlight-secondary {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        /* Loading Animation */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">BETAO</div>
+            <nav class="nav">
+                <a href="#home">Início</a>
+                <a href="#cassino">Cassino</a>
+                <a href="#apostas">Apostas</a>
+                <a href="#app">App</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#pages">Conteúdo Completo</a>
+                <a href="#cadastro" class="btn-primary">Cadastrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Betao – Casa de Apostas e Cassino Online Licenciada no Brasil</h1>
+                <p class="subtitle">Licenciada pelo Ministério da Fazenda (Portaria SPA/MF nº 2.096). Mais de 5.000 jogos de cassino e apostas em 40+ esportes. Pix instantâneo, saque em até 1 hora.</p>
+                
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>Licença Brasil</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>Pix Instantâneo</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>6M+ Usuários</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon">✓</span>
+                        <span>Saque Rápido</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#cadastro" class="btn-primary">Cadastrar Agora</a>
+                    <a href="#sobre" class="btn-secondary">Saiba Mais</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">5.000+</div>
+                        <div class="stat-label">Jogos de Cassino</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">40+</div>
+                        <div class="stat-label">Esportes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">6M+</div>
+                        <div class="stat-label">Usuários</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-card">
+                    <h3>🚀 Comece Agora</h3>
+                    <div class="hero-card-grid">
+                        <div class="hero-card-item">
+                            <div class="hero-card-icon">⚡</div>
+                            <div class="hero-card-text">
+                                <strong>Pix Instantâneo</strong>
+                                <span>Depósito de R$ 5 em segundos</span>
+                            </div>
+                        </div>
+                        <div class="hero-card-item">
+                            <div class="hero-card-icon">💰</div>
+                            <div class="hero-card-text">
+                                <strong>Saque Rápido</strong>
+                                <span>Até 1 hora via Pix</span>
+                            </div>
+                        </div>
+                        <div class="hero-card-item">
+                            <div class="hero-card-icon">🎁</div>
+                            <div class="hero-card-text">
+                                <strong>Cashback 10%</strong>
+                                <span>Semanal, sem rollover</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- Introduction -->
+        <section class="section content">
+            <div class="info-box">
+                <p>Betao é uma plataforma de apostas esportivas e cassino online operada pela <strong>OIG Gaming Brazil LTDA</strong> (CNPJ <strong>55.459.453/0001-72</strong>), licenciada pela <strong>Portaria SPA/MF nº 2.096</strong> emitida pelo Ministério da Fazenda em <strong>30 de dezembro de 2024</strong>. Desde <strong>1º de janeiro de 2025</strong>, a Betao opera legalmente no território brasileiro, cumprindo integralmente a <strong>Lei nº 14.790/2023</strong> que regulamenta as apostas de quota fixa no país.</p>
+                
+                <p>A plataforma oferece <strong>mais de 5.000 jogos de cassino</strong> de provedores certificados como Pragmatic Play, Evolution Gaming e PG Soft, além de apostas esportivas em <strong>40+ modalidades</strong>, incluindo futebol, basquete, vôlei e eSports. Todos os depósitos e saques são processados exclusivamente via <strong>Pix</strong>, com depósito mínimo de <strong>R$ 5,00</strong> e saque mínimo de <strong>R$ 30,00</strong>. O processamento de saques ocorre em <strong>até 1 hora</strong>, sem cobrança de taxas.</p>
+            </div>
+        </section>
+
+        <!-- License Section -->
+        <section class="section" id="sobre">
+            <div class="section-header">
+                <div class="section-icon">🔐</div>
+                <h2 class="section-title">Betao Bet: Plataforma Licenciada e Regulamentada</h2>
+                <p class="section-subtitle">Dupla certificação para sua segurança: Brasil e Curaçao</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🇧🇷</div>
+                    <h3>Licença Brasileira</h3>
+                    <p>Autorizada pela <strong>Portaria SPA/MF nº 2.096</strong> (registro <strong>0014/2024</strong>) após rigorosa análise do Ministério da Fazenda.</p>
+                    <ul>
+                        <li>Verificação de capacidade financeira</li>
+                        <li>Sistemas de segurança auditados</li>
+                        <li>Conformidade com Lei 14.790/2023</li>
+                        <li>Consultável em gov.br/fazenda</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🌍</div>
+                    <h3>Licença Internacional</h3>
+                    <p>Detém <strong>Licença de Curaçao #365/JAZ</strong>, reconhecida em mais de 100 países.</p>
+                    <ul>
+                        <li>Auditorias anuais de jogos (RNG)</li>
+                        <li>Proteção de dados dos usuários</li>
+                        <li>Reservas financeiras separadas</li>
+                        <li>Pagamento de prêmios garantido</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">💼</div>
+                    <h3>Empresa Transparente</h3>
+                    <p><strong>OIG Gaming Brazil LTDA</strong> com CNPJ verificável na Receita Federal.</p>
+                    <ul>
+                        <li>CNPJ: 55.459.453/0001-72</li>
+                        <li>Sede: Santo Antônio de Lisboa, Piauí</li>
+                        <li>Fundada: Junho de 2024</li>
+                        <li>Reserva mínima: R$ 5 milhões</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Section -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">⚡</div>
+                <h2 class="section-title">Depósito e Saque Via Pix: Transações Instantâneas</h2>
+                <p class="section-subtitle">Único método de pagamento, seguindo Lei 14.790/2023</p>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Método</th>
+                            <th>Depósito Mínimo</th>
+                            <th>Saque Mínimo</th>
+                            <th>Tempo</th>
+                            <th>Taxas</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Pix</strong></td>
+                            <td><strong>R$ 5,00</strong></td>
+                            <td><strong>R$ 30,00</strong></td>
+                            <td>Depósito: Instantâneo<br>Saque: Até 1 hora</td>
+                            <td><strong>R$ 0</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="content">
+                <h3>Por Que Apenas Pix?</h3>
+                <p>A <strong>Lei 14.790/2023</strong> restringe operadoras licenciadas a métodos rastreáveis pelo Banco Central. Cartões de crédito, carteiras digitais e criptomoedas não são aceitos na versão <strong>.bet.br</strong> da plataforma, garantindo conformidade legal e proteção ao apostador.</p>
+            </div>
+        </section>
+
+        <!-- Casino Section -->
+        <section class="section" id="cassino">
+            <div class="section-header">
+                <div class="section-icon">🎰</div>
+                <h2 class="section-title">Mais de 5.000 Jogos de Cassino Certificados</h2>
+                <p class="section-subtitle">Slots, crash games, jogos de mesa e cassino ao vivo com RNG certificado</p>
+            </div>
+
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-thumbnail">🐯</div>
+                    <div class="game-info">
+                        <div class="game-title">Fortune Tiger</div>
+                        <div class="game-provider">PG Soft</div>
+                        <div class="game-rtp">RTP: 96.81%</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-thumbnail">✈️</div>
+                    <div class="game-info">
+                        <div class="game-title">Aviator</div>
+                        <div class="game-provider">Spribe</div>
+                        <div class="game-rtp">RTP: 97.00%</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-thumbnail">⚡</div>
+                    <div class="game-info">
+                        <div class="game-title">Gates of Olympus</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                        <div class="game-rtp">RTP: 96.50%</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-thumbnail">🍬</div>
+                    <div class="game-info">
+                        <div class="game-title">Sweet Bonanza</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                        <div class="game-rtp">RTP: 96.48%</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <div class="game-thumbnail">🚀</div>
+                    <div class="game-info">
+                        <div class="game-title">Spaceman</div>
+                        <div class="game-provider">Pragmatic Play</div>
+                        <div class="game-rtp">RTP: 96.50%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#cassino" class="btn-primary">Ver Todos os Jogos</a>
+            </div>
+        </section>
+
+        <!-- Sports Section -->
+        <section class="section" id="apostas">
+            <div class="section-header">
+                <div class="section-icon">⚽</div>
+                <h2 class="section-title">Apostas Esportivas: 40+ Modalidades com Odds Competitivas</h2>
+                <p class="section-subtitle">150+ ligas de futebol, NBA, eSports e muito mais</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">⚽</div>
+                    <h3>Futebol</h3>
+                    <p>Principal produto com cobertura de <strong>150+ ligas</strong> internacionais.</p>
+                    <ul>
+                        <li>Brasileirão Série A, B, Copa do Brasil</li>
+                        <li>Champions League, Premier League</li>
+                        <li>Libertadores, Sul-Americana</li>
+                        <li>200+ mercados por jogo</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🏀</div>
+                    <h3>Basquete</h3>
+                    <p>Cobertura completa de <strong>NBA</strong> e <strong>NBB</strong>.</p>
+                    <ul>
+                        <li>1.230 jogos NBA por temporada</li>
+                        <li>Apostas ao vivo em todos os jogos</li>
+                        <li>150+ mercados por partida</li>
+                        <li>Cash out disponível</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎮</div>
+                    <h3>eSports</h3>
+                    <p>Apostas em <strong>CS2, LoL, Dota 2, Valorant</strong> e Free Fire.</p>
+                    <ul>
+                        <li>Torneios profissionais globais</li>
+                        <li>Odds atualizadas em tempo real</li>
+                        <li>100+ mercados por partida</li>
+                        <li>Estatísticas ao vivo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotions Section -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">🎁</div>
+                <h2 class="section-title">Promoções Betao: Cashback e Super Odds</h2>
+                <p class="section-subtitle">Sem bônus de cadastro (proibido por lei desde 01/01/2025)</p>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-box-title">
+                    <span>⚠️</span>
+                    <span>IMPORTANTE</span>
+                </div>
+                <p>Desde <strong>1º de janeiro de 2025</strong>, a <strong>Lei nº 14.790/2023</strong> proíbe bônus de boas-vindas (bônus de cadastro) em casas de apostas licenciadas no Brasil. Esta medida visa proteger apostadores de práticas que incentivem jogo irresponsável.</p>
+                <p style="margin-top: 1rem;">Por determinação legal, a Betao <strong>não oferece</strong> bônus no primeiro depósito. Operadoras que continuam oferecendo esses bônus <strong>operam ilegalmente</strong>.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">💰</div>
+                    <h3>Cashback Semanal</h3>
+                    <p>Receba até <strong>10%</strong> das perdas líquidas em apostas esportivas.</p>
+                    <ul>
+                        <li>Creditado toda segunda-feira</li>
+                        <li>Sem rollover (saque imediato)</li>
+                        <li>Máximo: R$ 500/semana</li>
+                        <li>Mínimo: R$ 20 apostados</li>
+                    </ul>
+                    <div class="table-container" style="margin-top: 1rem;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Perdas</th>
+                                    <th>Cashback</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>R$ 20-100</td>
+                                    <td><strong>5%</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>R$ 101-500</td>
+                                    <td><strong>7%</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>R$ 501+</td>
+                                    <td><strong>10%</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📈</div>
+                    <h3>Super Odds</h3>
+                    <p>Cotações aumentadas em até <strong>50%</strong> diariamente.</p>
+                    <ul>
+                        <li>3-5 jogos selecionados por dia</li>
+                        <li>Futebol, basquete e tênis</li>
+                        <li>Limite: R$ 100 por Super Odd</li>
+                        <li>Apenas apostas simples</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Info -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Dados da Empresa Betao</h2>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Informação</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Razão Social</strong></td>
+                            <td>OIG Gaming Brazil LTDA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CNPJ</strong></td>
+                            <td>55.459.453/0001-72</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fundação</strong></td>
+                            <td>Junho de 2024</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sede</strong></td>
+                            <td>Santo Antônio de Lisboa, Piauí, Brasil</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Licença Brasil</strong></td>
+                            <td>Portaria SPA/MF nº 2.096</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Licença Internacional</strong></td>
+                            <td>Curaçao #365/JAZ</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Domínio Oficial</strong></td>
+                            <td>betao.bet.br</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Usuários</strong></td>
+                            <td>6+ milhões (fevereiro 2026)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section">
+            <div class="section-header">
+                <div class="section-icon">❓</div>
+                <h2 class="section-title">Perguntas Frequentes sobre a Betao</h2>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Betao é confiável?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim. Betao é licenciada pela <strong>Portaria SPA/MF nº 2.096</strong> (Ministério da Fazenda do Brasil) e pela <strong>Licença Curaçao #365/JAZ</strong>. A empresa operadora é <strong>OIG Gaming Brazil LTDA</strong> (CNPJ <strong>55.459.453/0001-72</strong>), fundada em <strong>junho de 2024</strong>. A plataforma utiliza criptografia <strong>SSL 256-bit</strong> e é obrigada por lei a manter reserva financeira de <strong>R$ 5 milhões</strong> para pagamento de prêmios. Mais de <strong>6 milhões de usuários</strong> já utilizam a Betao.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Betao paga mesmo?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim. Saques via Pix são processados em <strong>até 1 hora</strong> nos dias úteis. O saque mínimo é <strong>R$ 30,00</strong> e o máximo varia de <strong>R$ 20.000</strong> a <strong>R$ 200.000</strong> por transação. Para valores acima de <strong>R$ 1.000</strong>, é necessário verificação de identidade (upload de documento). A Betao não cobra taxas de saque.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Por que não tem bônus de boas-vindas?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        A <strong>Lei 14.790/2023</strong>, em vigor desde <strong>1º de janeiro de 2025</strong>, proíbe bônus de cadastro e bônus de primeiro depósito em casas de apostas licenciadas no Brasil. Esta medida protege apostadores de incentivos que levam a apostas irresponsáveis. Em vez de bônus de boas-vindas, a Betao oferece <strong>cashback semanal de até 10%</strong> (sem rollover) e <strong>Super Odds</strong> diárias (cotações aumentadas em até 50%).
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Qual o depósito mínimo?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>R$ 5,00</strong> via Pix. O processamento é instantâneo (segundos). Não há taxa de depósito. Não há limite máximo, mas valores acima de <strong>R$ 10.000</strong> podem requerer verificação adicional conforme normas de prevenção à lavagem de dinheiro.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Betao e Betano são a mesma empresa?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <strong>NÃO.</strong> Betao (OIG Gaming Brazil LTDA, CNPJ 55.459.453/0001-72) e Betano (Kaizen Gaming) são marcas completamente diferentes, de empresas distintas. Não há relação corporativa entre elas.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Betao tem app?</span>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sim. <strong>Android</strong>: download direto do site betao.bet.br (arquivo APK de <strong>47 MB</strong>). Não está na Google Play devido às políticas da loja. <strong>iOS</strong>: PWA (Progressive Web App) instalado via Safari. Ambos têm as mesmas funcionalidades da versão desktop.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="section" id="cadastro" style="text-align: center;">
+            <div style="background: linear-gradient(135deg, rgba(26, 92, 255, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%); padding: 4rem 2rem; border-radius: 20px; border: 1px solid var(--border);">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Pronto para Apostar? Cadastre-se no Betao Agora</h2>
+                <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Crie sua conta em <strong>2 minutos</strong> com CPF e e-mail. Deposite a partir de <strong>R$ 5</strong> via Pix (instantâneo). Jogue em <strong>5.000+ jogos de cassino</strong> ou aposte em <strong>40+ esportes</strong>. Saque em <strong>até 1 hora</strong> sem taxas.
+                </p>
+                <a href="#cadastro" class="btn-primary" style="font-size: 1.125rem; padding: 1rem 2rem;">Cadastrar Agora →</a>
+            </div>
+        </section>
+
+        <section class="section" id="pages">
+            <div class="section-header">
+                <div class="section-icon">🧾</div>
+                <h2 class="section-title">Textos Originais para WordPress</h2>
+                <p class="section-subtitle">Cada arquivo abaixo é incluído sem alterações para uso direto na integração do site WordPress.</p>
+            </div>
+
+            <div class="page-archive">
+                <details open>
+                    <summary>Betao – Página principal (`index.txt`)</summary>
+                    <div class="raw-article" data-source="index.txt">
+                        <pre>Carregando conteúdo...</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Betao App – Aplicativo oficial (`app.txt`)</summary>
+                    <div class="raw-article" data-source="app.txt">
+                        <pre>Carregando conteúdo...</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Betao Apostas Esportivas (`betting.txt`)</summary>
+                    <div class="raw-article" data-source="betting.txt">
+                        <pre>Carregando conteúdo...</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Betao Cassino Online (`casino.txt`)</summary>
+                    <div class="raw-article" data-source="casino.txt">
+                        <pre>Carregando conteúdo...</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Promoções Betao (`promocodes.txt`)</summary>
+                    <div class="raw-article" data-source="promocodes.txt">
+                        <pre>Carregando conteúdo...</pre>
+                    </div>
+                </details>
+
+                <details>
+                    <summary>Cadastro Betao (`registration.txt`)</summary>
+                    <div class="raw-article" data-source="registration.txt">
+                        <pre>Carregando conteúdo...</pre>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Betao</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6;">
+                        Casa de apostas licenciada pelo Ministério da Fazenda (Portaria SPA/MF nº 2.096). Operada pela OIG Gaming Brazil LTDA.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#cassino">Cassino</a></li>
+                        <li><a href="#apostas">Apostas Esportivas</a></li>
+                        <li><a href="#app">Aplicativo</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Suporte</h3>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#termos">Termos de Uso</a></li>
+                        <li><a href="#privacidade">Política de Privacidade</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li>CNPJ: 55.459.453/0001-72</li>
+                        <li>Portaria SPA/MF nº 2.096</li>
+                        <li>Licença Curaçao #365/JAZ</li>
+                        <li>Lei 14.790/2023</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="age-restriction">
+                <div class="age-icon">🔞</div>
+                <div>
+                    <strong>Proibido para menores de 18 anos.</strong><br>
+                    Jogue com responsabilidade.
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Betao. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <span>Licença: Portaria SPA/MF nº 2.096</span>
+                    <span>|</span>
+                    <span>CNPJ: 55.459.453/0001-72</span>
+                    <span>|</span>
+                    <span>OIG Gaming Brazil LTDA</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ Toggle Script -->
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                // Close all FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        const rawArticles = document.querySelectorAll('.raw-article');
+        rawArticles.forEach(article => {
+            const source = article.dataset.source;
+            if (!source) {
+                return;
+            }
+
+            fetch(source)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Falha ao carregar');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    const pre = article.querySelector('pre');
+                    if (pre) {
+                        pre.textContent = text;
+                    }
+                })
+                .catch(() => {
+                    const pre = article.querySelector('pre');
+                    if (pre) {
+                        pre.textContent = 'Não foi possível carregar o conteúdo original. Garanta que o arquivo esteja disponível no mesmo diretório.';
+                    }
+                });
+        });
+    </script>
+</body>
+</html>
